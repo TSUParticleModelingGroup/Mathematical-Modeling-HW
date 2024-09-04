@@ -219,13 +219,17 @@ void getForces()
 	float halfSide = BoxSideLength/2.0;
 	float howMuch;
 	float ballRadius = SphereDiameter/2.0;
-	
+
+	// Zeroing out force before we start summing them up.
 	for(int i = 0; i < NUMBER_OF_BALLS; i++)
 	{
 		Force[i].x = 0.0;
 		Force[i].y = 0.0;
 		Force[i].z = 0.0;
-		
+	}
+	
+	for(int i = 0; i < NUMBER_OF_BALLS; i++)
+	{
 		if((Position[i].x - ballRadius) < -halfSide)
 		{
 			howMuch = -halfSide - (Position[i].x - ballRadius);
