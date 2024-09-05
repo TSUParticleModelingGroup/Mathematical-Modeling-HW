@@ -437,7 +437,6 @@ int main(int argc, char** argv)
 	glutReshapeFunc(reshape);
 	glutKeyboardFunc(KeyPressed);
 	//glutMouseFunc(mymouse);
-	//glutKeyboardFunc(KeyPressed);
 	glutIdleFunc(idle);
 	glutMainLoop();
 	
