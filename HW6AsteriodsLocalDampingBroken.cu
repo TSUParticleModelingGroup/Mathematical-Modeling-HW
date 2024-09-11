@@ -542,7 +542,7 @@ void terminalPrint()
 	printf(" q: Terminates the simulation");
 	
 	// Print the time out in hours.
-	printf("\n\n Time = %f \033[0;34mhours", RunTime/TimeUnitConverter);
+	printf("\n\n Time = %f \033[0;34mhours", RunTime*TimeUnitConverter);
 	printf("\033[0m");
 	printf("\n");
 }
